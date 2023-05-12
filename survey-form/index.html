@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Annual Event Survey Form</h1>
+      <p id="description">
+        <em>Please tell us how to improve your experience</em>
+      </p>
+
+      <form
+        id="survey-form"
+        method="post"
+        action="https://survey-form.freecodecamp.rocks"
+      >
+        <div class="required">
+          <label id="name-label">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="Enter your name"
+          />
+
+          <label id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <label id="number-label">Age</label>
+          <input
+            id="number"
+            name="number-label"
+            type="number"
+            min="18"
+            max="100"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="dropdown">
+          <label for="dropdown-label"
+            >Were you an Attendee or an Exhibitor?</label
+          >
+          <select id="dropdown" name="profile">
+            <option value="">(select one)</option>
+            <option value="1">Attendee</option>
+            <option value="2">Exhibitor</option>
+          </select>
+        </div>
+
+        <div class="radio">
+          <p>Will you be returning next year?</p>
+          <label for="yes">
+            <input
+              id="radio"
+              name="return"
+              type="radio"
+              value="yes"
+            />Definitely</label
+          >
+          <label for="maybe">
+            <input id="radio" name="return" type="radio" value="maybe" />Unsure
+          </label>
+          <label for="no">
+            <input id="radio" name="return" type="radio" value="no" />No</label
+          >
+        </div>
+
+        <div class="checkbox">
+          <p>What were your favourite features?</p>
+
+          <label for="features">
+            <input
+              id="checkbox-label"
+              type="checkbox"
+              value="tradeshow"
+            />Tradeshow
+            <input
+              id="checkbox-label"
+              type="checkbox"
+              value="education"
+            />Seminars
+            <input
+              id="checkbox-label"
+              type="checkbox"
+              value="networking"
+            />Networking
+            <input
+              id="checkbox-label"
+              type="checkbox"
+              value="entertainment"
+            />Entertainment
+            <input id="checkbox-label" type="checkbox" value="venue" />Venue
+            <input id="checkbox-label" type="checkbox" value="fnb" />Food &
+            Beverage
+            <input id="checkbox-label" type="checkbox" value="cs" />Customer
+            Service
+          </label>
+        </div>
+
+        <div class="textarea">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="submitbutton">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
