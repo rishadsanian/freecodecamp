@@ -1,0 +1,149 @@
+/* Styles for the Rabindranath Tagore Tribute Page */
+
+/* Global Styles */
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Libre Baskerville, serif, Righteous, cursive";
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  background-color: lightgray;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0 auto 0 auto;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-weight: 100;
+  margin: 0 auto 25px auto;
+}
+
+#main {
+  margin: 0px 8px;
+  padding: 80px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+.first {
+  font-size: 2.5rem;
+}
+
+#image {
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2%;
+}
+img {
+  height: 40%;
+  display: block;
+  block-size: 10%;
+}
+header {
+  width: 65%;
+  margin: 0px auto 50px auto;
+  padding: 50px auto;
+}
+
+#img-div {
+  width: 65%;
+  background: white;
+  padding: 20px auto;
+  margin: 50px auto 0px auto;
+  justify-content: center;
+}
+
+#img-caption {
+  margin: 8px 0 5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#bio {
+  margin: 50px auto 50px auto;
+  max-width: 65%;
+  text-align: left;
+}
+
+@media (max-width: 460px) {
+  #bio {
+    font-size: 2 rem;
+  }
+}
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 50px auto;
+  width: 65%;
+}
+blockquote > p {
+  font-size: 120%;
+  text-align: center;
+}
+#cite {
+  font-size: 90%;
+  text-align: right;
+}
+
+#reference {
+  text-align: center;
+}
+
+#reference h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 50px auto 0 auto;
+  padding: 0;
+}
+
+#tribute-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
